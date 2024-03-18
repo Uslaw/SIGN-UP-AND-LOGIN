@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script src="https://cdn.tailwindcss.com"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js">
+    function myFunction(){document .getElementByID ('checkpassword').innerHTML ="Password,Comfirm_password";}
+ </script>
+    <!-- <script>
+        
+    </script>
+
+    // <script src="./script.js"> 
+    // function myFunction(){
+    //     document.getElementById('demo').innerHTML ="Hello World";}
+    // </script> -->
+</head>
+<body class="font-sans" >
+    <div id="error"></div>
+    <div class="Intro">
+        <h1 class="text-5xl hover:text-blue-600">Create Your Account</h1>
+        
+            <P>Please enter your first name and last name exactly as displayed in your National ID Card</P>
+        </div>
+       <div> <form>
+            <label for="fname">First name:</label> <br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+            <label for="ID">National ID:</label><br>
+            <input type="number" id="ID" name="National ID" required><br>
+            <label for="Password">Password: </label><br>
+            <input type="Password" id="Password"name="Password" required><br>
+            <label for="Comfirm_password">Comfirm password:</label><br>
+            <input type="Comfirm_password" id="Comfirm_password"name="Comfirm_password" required><br>
+            <label for="number">Mobile number:</label><br>
+            <input type="number"id="number"name="Mobile number" required><br>
+            <input type="checkbox"id="Recaptcha"name="Recaptcha" required>
+            <label for="Recaptcha">I'm not a robot:</label><br>
+            <!-- <input type="Submit" value="Submit">  -->
+    <button type="Submit" onclick =checkpassword()>SUBMIT</button>
+        </form>
+    </div>
+    </div>
+    <!-- <button type="submit">Submit</button> -->
+    
+</body>
+</html>
